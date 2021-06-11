@@ -1,0 +1,314 @@
+.mainpage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #7DCFF0;
+    position: relative;
+}
+#checkbox1{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+#checkbox2{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////vaccine/////////////////////////////////////////////////////// */
+.vaccine__rel{
+    width: 100%;
+    height: 100%;
+    background-color:#CEDAE1;
+    position: relative;
+}
+.vaccine__page{
+    width: 140px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+#checkbox1:checked ~ .vaccine__page{
+    width: 98%;
+    height: 100%;
+    background-color: #CEDAE1;
+    transition: 0.5s;
+}
+.vaccine__openDiv{
+    transform: rotate(90deg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color:#CEDAE1;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 6%;
+    right: -65px;
+}
+.vaccine__openP{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////myths//////////////////////////////////////////////////////////////////// */
+.myth__rel{
+    width: 100%;
+    height: 100%;
+    background-color:#EB6856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.myth__page{
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: 0.5s;
+}
+#checkbox2:checked ~ .myth__page{
+    width: 97%;
+    height: 100%;
+    background-color: #EB6856;
+    transition: 0.5s;
+}
+.myth__openDiv{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 19%;
+    right: -55px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80px;
+    height: 30px;
+    background-color:#EB6856;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.myth__openP{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+/* ////////////////////////////////////////////////////////types///////////////////////////////////////////////////////// */
+
+.types__rel{
+    width: 100%;
+    height: 100%;
+    background-color:#DA9D96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.types__page{
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transition: 0.5s;
+}
+#checkbox3:checked ~ .types__page{
+    width: 96%;
+    height: 100%;
+    background-color: #DA9D96;
+    transition: 0.5s;
+}
+.types__openDiv{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 31.5%;
+    right: -55px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80px;
+    height: 30px;
+    background-color:#DA9D96;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.types__openP{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: white;
+}
+
+/* /////////////////////////////////////////////////////QUIZ/////////////////////////////////////////////////////////// */
+
+
+.quiz__rel{
+    width: 100%;
+    height: 100%;
+    background-color:#596E9E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.quiz__page{
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    transition: 0.5s;
+}
+#checkbox4:checked ~ .quiz__page{
+    width: 95%;
+    height: 100%;
+    background-color: #596E9E;
+    transition: 0.5s;
+}
+.quiz__openDiv{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 45.5%;
+    right: -65px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color:#596E9E;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.quiz__openP{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: white;
+}
+
+/* ////////////////////////////////////////////////////////////STATIC////////////////////////////////////////////////////////////////////////// */
+
+.static__rel{
+    width: 100%;
+    height: 100%;
+    background-color:#DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.static__page{
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transition: 0.5s;
+}
+#checkbox5:checked ~ .static__page{
+    width: 94%;
+    height: 100%;
+    background-color: #DBDBDB;
+    transition: 0.5s;
+}
+.static__openDiv{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 63%;
+    right: -80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 130px;
+    height: 30px;   
+    background-color:#DBDBDB;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.static__openP{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: red;
+}
+
+
+
+/* /////////////////////////////////////////////////ONLINE////////////////////////////////////////////////////////////// */
+
+
+.online__rel{
+    width: 100%;
+    height: 100%;
+    background-color:#419FB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.online__page{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    transition: 0.5s;
+}
+#checkbox6:checked ~ .online__page{
+    width: 93%;
+    height: 100%;
+    background-color: #419FB0;
+    transition: 0.5s;
+}
+.online__openDiv{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 85%;
+    right: -100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 170px;
+    height: 30px;   
+    background-color:#419FB0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.online__openP{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: white;
+}
