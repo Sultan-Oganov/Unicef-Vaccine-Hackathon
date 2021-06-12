@@ -2,9 +2,11 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
     background-color: #7DCFF0;
     position: relative;
 }
+
 #checkbox1{
     width: 50px;
     height: 50px;
@@ -15,9 +17,144 @@
     height: 50px;
     display: none;
 }
+#checkbox3{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+#checkbox4{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+#checkbox5{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+#checkbox6{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.mainpage__navStart{
+    position: absolute;
+    height: 75%;
+    width: 5%;
+    left: 20%;
+    top: 15%;
+}
+.mainpage__girl{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 85%
+}
+.mainpage__share{
+    cursor: pointer;
+    transition: 3s;
+}
+.mainpage__shareWhatsApp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    width: 45px;
+    height: 45px;   
+    animation: share 0.5s infinite ;
+    transform: scale(1);
+}
+
+.mainpage__vaccine{
+    display: none;
+}
+.mainpage__vaccine__active{
+    width: 100%;
+    height: 100%;  
+}
+.mainpage__myth{
+    display: none;
+}
+.mainpage__myth__active{
+    width: 100%;
+    height: 100%;
+}
+.mainpage__types{
+    display: none;
+}
+.mainpage__types__active{
+    width: 100%;
+    height: 100%;
+}
+.mainpage__quiz{
+    display: none;
+}
+.mainpage__quiz__active{
+    width: 100%;
+    height: 100%;
+}
+.mainpage__stat{
+    display: none;
+}
+.mainpage__stat__active{
+    width: 100%;
+    height: 100%;
+}
+.mainpage__online{
+    display: none;
+}
+.mainpage__online__active{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes share {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.mainpage__welcomeBox{
+    height: 90%;
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mainpage__firstWelcomeText{
+    text-align: center;
+}
+.mainpage__firstPoint{
+    font-size: 50px;
+    color: #FFE600;
+    font-weight: bold;
+}
+.mainpage__firstContext{
+    color: white;
+    font-size: 30px;
+}
 
 
-
+.mainpage__secondWelcomeText{
+    text-align: center;
+}
+.mainpage__secondPoint{
+    font-size: 50px;
+    color: #FFE600;
+    font-weight: bold;
+}
+.mainpage__secondContext{
+    color: white;
+    font-size: 30px;
+}
 
 
 
@@ -42,7 +179,7 @@
     transition: 0.5s;
 }
 #checkbox1:checked ~ .vaccine__page{
-    width: 98%;
+    width: 93%;
     height: 100%;
     background-color: #CEDAE1;
     transition: 0.5s;
@@ -93,7 +230,7 @@
     transition: 0.5s;
 }
 #checkbox2:checked ~ .myth__page{
-    width: 97%;
+    width: 93%;
     height: 100%;
     background-color: #EB6856;
     transition: 0.5s;
@@ -142,7 +279,7 @@
     transition: 0.5s;
 }
 #checkbox3:checked ~ .types__page{
-    width: 96%;
+    width: 93%;
     height: 100%;
     background-color: #DA9D96;
     transition: 0.5s;
@@ -190,7 +327,7 @@
     transition: 0.5s;
 }
 #checkbox4:checked ~ .quiz__page{
-    width: 95%;
+    width: 93%;
     height: 100%;
     background-color: #596E9E;
     transition: 0.5s;
@@ -237,7 +374,7 @@
     transition: 0.5s;
 }
 #checkbox5:checked ~ .static__page{
-    width: 94%;
+    width: 93%;
     height: 100%;
     background-color: #DBDBDB;
     transition: 0.5s;

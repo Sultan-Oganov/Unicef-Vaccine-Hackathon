@@ -1,0 +1,9 @@
+.tab{
+    width: 400px !important;
+}
+.MuiTab-root{
+    max-width: 500px !important;
+}
+/* .MuiTabScrollButton-vertical{
+    height: 40px !important;
+} */
