@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import classes from './Quiz.css'
-import girl3 from '../../images/girl3.svg'
+import girl3 from '../../images/girl3.png'
 // import strelkaVverch from '../../images/strelkaKmifam.png'
 // import strelkaVniz from '../../images/strelkaVniz.png' 
 
