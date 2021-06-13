@@ -23,6 +23,11 @@ const Vaccines = () => {
                 чтобы стимулировать продукцию антител  <br />
                 для борьбы с возбудителями заболевания. <br />
             </p>
+                {/*<div className={classes.content}>
+                <iframe width="1046" height="445" src="https://www.youtube.com/embed/pM5XogpX1JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="967" height="544" src="https://www.youtube.com/embed/OEUqa_1w08I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="967" height="544" src="https://www.youtube.com/embed/8xPMvrViKfU?list=RD8xPMvrViKfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>*/}
         </div>
     );
 };
