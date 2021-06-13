@@ -83,12 +83,13 @@
     width: 70%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .modal__thirdAge {
     display: flex;
     align-items: center;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .modal__thirdAge p {
     margin: 0;
@@ -98,7 +99,7 @@
 .modal__sex {
     display: flex;
     align-items: center;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .modal__sex p {
     margin: 0;
@@ -135,6 +136,7 @@
 }
 
 .modal__sendBtn {
+    cursor: pointer;
     width: 120px;
     height: 35px;
     background: white;
@@ -146,4 +148,9 @@
     font-size: 20px;
     margin: auto;
     font-weight: bold;
+}
+
+.modal__wrapper__active .MuiInputBase-input {
+    color: #fff;
+    text-align: center;
 }

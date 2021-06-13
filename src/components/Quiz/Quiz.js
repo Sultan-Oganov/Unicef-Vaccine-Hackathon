@@ -1,14 +1,8 @@
 import React, { useState } from 'react'
-import classes from './Quiz.css'
+import './Quiz.css'
 import girl3 from '../../images/girl3.png'
-// import strelkaVverch from '../../images/strelkaKmifam.png'
-// import strelkaVniz from '../../images/strelkaVniz.png' 
-
 
 const Quiz = () => {
-
-    let skobka = ')'
-
 
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [score, setScore] = useState(0)
@@ -61,7 +55,6 @@ const Quiz = () => {
 
     ]
 
-
     const toggleQuestion = (isCorrect) => {
         if (isCorrect) {
             setScore(score + 1)
@@ -82,6 +75,14 @@ const Quiz = () => {
         }
     }
 
+    const refreshQuiz = () => {
+        setCurrentQuestion(0)
+        setScore(0)
+        setShowScoreResultThree(false)
+        setShowScoreResultFive(false)
+        setPageNumber(1)
+    }
+
 
     return (
 
@@ -89,69 +90,64 @@ const Quiz = () => {
             <div className='quizContent'>
 
                 {
-                    showScoreThree ? 
-                    <div>
-                        <div className='quizResultThree'>Ваш результат</div>
-                        <div className='quizScore'>
-                            {score}
-                        </div>
-                        <div className='quizRecomendatsii'>Вам нужно немного подкрепить<br></br> информацию о видах вакцин и
-                            <br></br> какие есть мифы
-                            {/* <img className='quizImgVverch' src={strelkaVverch} /> */}
-                        </div>
-                    </div> 
-
-                    :
-
-                        showScoreFive ? <div> <div className='quizResultThree'>Ваш результат</div>
-
+                    showScoreThree ?
+                        <div>
+                            <div className='quizResultThree'>Ваш результат</div>
                             <div className='quizScore'>
                                 {score}
-
                             </div>
-                            <div className='quizRecomendatsii'>Вы хорошо освоили информацию <br></br> о вакцинации.<br></br>
-                                Если вы желаете узнать где<br></br> можно получить вакцину, а также<br>
-
-                                </br> их контактные данные
-                                {/* <img src={strelkaVniz} /> */}
-                            </div></div> : <div>
-                            <div className='quizParagraf'><p>А ТЕПЕРЬ, ДАВАЙТЕ ПРОВЕРИМ -<br></br> ЧТО ВЫ ОСВОИЛИ</p></div>
-                            <div className='quizTestImg'>
-                            <div className='quizTest'>
-                                <div className='quizTest'><span className='quizTestFirstNum' >0{pageNumber}/</span><span className='quizTestSecondNum'>05</span></div>
-                                <div className='quizQuestionOnTest'>{
-                                    arrQuestion[currentQuestion].quizQuestion
-                                }</div>
-
-                                {
-                                    arrQuestion[currentQuestion].quizOptionAnswer.map(item => {
-                                        return (
-                                            <div>
-                                                <div className='quizVarintyOtvetov' onClick={() => toggleQuestion(item.isCorrect)} >{item.answerVariant}</div>
-                                            </div>
-
-                                        )
-
-                                    })
-                                }
-
-
-                                {/* <div className='QuizDalee' onClick={toggleQuestion}>Далее</div> */}
-
-
+                            <div className='quizRecomendatsii'>Вам нужно немного подкрепить<br></br> информацию о видах вакцин и
+                                <br /> какие есть мифы
                             </div>
-                            <div className='quizImg'>
-                            <img src={girl3} className='quizimgGirl'/></div></div>
-                            <footer className='quizFooter'>
-                                <img className='quizFooterWhatsapp' />
-                            </footer>
-
+                            <div className='quizBtnRefresh' onClick={refreshQuiz}>Повторить тест?</div>
                         </div>
 
+                        :
 
+                        showScoreFive ?
+                            <div>
+                                <div className='quizResultThree'>Ваш результат
+                                </div>
 
+                                <div className='quizScore'>
+                                    {score}
+                                </div>
+                                <div className='quizRecomendatsii'>Вы хорошо освоили информацию <br /> о вакцинации.<br />
+                                    Если вы желаете узнать где<br /> можно получить вакцину, а также<br />
+                                    их контактные данные
+                                </div>
+                                <div className='quizBtnRefresh' onClick={refreshQuiz}> Повторить тест?</div>
+                            </div>
+                            :
+                            <div>
+                                <div className='quizParagraf'><p>А ТЕПЕРЬ, ДАВАЙТЕ ПРОВЕРИМ -<br></br> ЧТО ВЫ ОСВОИЛИ</p></div>
+                                <div className='quizTestImg'>
+                                    <div className='quizTest'>
+                                        <div className='quizTest'><span className='quizTestFirstNum' >0{pageNumber}/</span><span className='quizTestSecondNum'>05</span></div>
+                                        <div className='quizQuestionOnTest'>
+                                            {
+                                                arrQuestion[currentQuestion].quizQuestion
+                                            }
+                                        </div>
 
+                                        {
+                                            arrQuestion[currentQuestion].quizOptionAnswer.map(item => {
+                                                return (
+                                                    <div>
+                                                        <div className='quizVarintyOtvetov' onClick={() => toggleQuestion(item.isCorrect)} >{item.answerVariant}</div>
+                                                    </div>
 
+                                                )
+
+                                            })
+                                        }
+
+                                    </div>
+                                    <div className='quizImg'>
+                                        <img src={girl3} className='quizimgGirl' />
+                                    </div>
+                                </div>
+                            </div>
                 }
             </div>
 
