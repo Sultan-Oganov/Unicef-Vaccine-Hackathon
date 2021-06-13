@@ -23,8 +23,7 @@
 
 .quizContent{
     width: 70%;
-    
-    
+    margin-left: 2%;
 }
 .quizTestFirstNum{
     color:white;
@@ -35,7 +34,7 @@
 }
 
 .quizTest{
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 .quizTestSecondNum{
 
@@ -46,7 +45,7 @@ font-size: 30px;
 .quizVarintyOtvetov{
     background: #7A8BB1;
     color: white;
-    width: 30%;
+    width: 60%;
     height: auto;
     margin: 10px 10px 10px 0;
     padding: 10px;
@@ -126,3 +125,13 @@ font-size: 30px;
     left: 0%;
     height: 80%;
 } 
+
+.quizTestImg{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quizimgGirl{
+    width: 540px;
+}
