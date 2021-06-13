@@ -22,11 +22,12 @@ import three from '../../images/covid.png';
 
 
 const Types = () => {
-    const [currImg, setCurrImg] = useState(0);
+    // const [currImg, setCurrImg] = useState(0);
 
     return (
         <div className="types__wrap">
             <img src={girl2} className="types__girl2" />
+            
             <div className="types__topDiv">
                 <p className="types__topText">ВИДЫ ВАКЦИН И ИХ ОТЛИЧИЯ</p>
                 <p className="types__topContext">
@@ -40,7 +41,7 @@ const Types = () => {
             </div>
             <div className="types__downDiv">
                 <div className="types__carousel">
-                    
+
                 </div>
             </div>
         </div>

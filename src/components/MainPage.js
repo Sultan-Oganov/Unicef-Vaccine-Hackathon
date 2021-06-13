@@ -84,7 +84,7 @@ const MainPage = () => {
                     <label onClick={()=>{setTimeout(() => {
                         setOnline(!online)
                     }, 200); }} htmlFor="checkbox6" className="online__openDiv">
-                        <p className='online__openP'>ОНЛАЙН-ЗАПИСЬ</p>
+                        <p className='online__openP'>АДРЕСА</p>
                     </label>
                     <div className={online ? "mainpage__online__active" : "mainpage__online"}><Online/></div>
                 </div>
@@ -94,14 +94,15 @@ const MainPage = () => {
 
             <img src={girl} className="mainpage__girl" />
             <img src={navStart} className="mainpage__navStart" />
-            <a  href="#" className="mainpage__share"><img src={whatsapp} className='mainpage__shareWhatsApp' /></a>
+            {/*<a  href="#" className="mainpage__share"><img src={whatsapp} className='mainpage__shareWhatsApp' /></a>*/}
+            
 
 
             <div className="mainpage__welcomeBox">
                 <div className="mainpage__firstWelcomeText">
                     <p className="mainpage__firstPoint">1</p>
                     <p className="mainpage__firstContext">Здравствуйте. <br />
-                        Вас приветствует Гулчапчап. <br />
+                        Вас приветствует Айдана. <br />  
                         Мы с командой UNICEF <br />
                         сегодня хотим рассказать <br />
                         о вакцинации, о видах вакцин <br />

@@ -17,6 +17,32 @@
 
 <body>
   <div id="root"></div>
+
+  <script type="text/javascript">
+    var arrgetbtn=[];
+    arrgetbtn.push({"title":"Whatsapp","icon":"fwidgethelp-whatsapp","link":"https://getbtn.com/whatsapp/996552072757","target":"_blank","color":"#FFFFFF","background":"#5ec758"});
+    arrgetbtn.push({"title":"Telegram","icon":"fwidgethelp-telegram_v2","link":"https://tttttt.me/vaccinekg_bot","target":"_blank","color":"#FFFFFF","background":"#27A5E7"});
+     var WidGetButtonOptions = {
+      id:"11afd86d75af6923d87a3fc725015a25",
+      iconopen:"fwidgethelp-commenting-o",
+      maintitle:"Онлайн-консультация",
+      mainbackground:"#3b3e46",
+      maincolor:"#FFFFFF",
+      pulse:"widgethelp_pulse",
+      fasize:"1.6",
+      direction:"top",
+      position:"rightbottom",
+      arrbtn: arrgetbtn
+    };
+    (function() {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.async = true;
+      script.src = "https://getbtn.com/widget/index.php?id="+WidGetButtonOptions.id;
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+    </script>
+
 </body>
 
 </html>
