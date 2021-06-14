@@ -51,7 +51,7 @@ const StatisticInfrm = (props) => {
     const names = defaultMarkers.map(el => el)
     const classes = useStyles();
     const theme = useTheme();
-    const [city, setCity] = useState('США')
+    const [city, setCity] = useState('Кыргызстан')
 
 
     let mark
