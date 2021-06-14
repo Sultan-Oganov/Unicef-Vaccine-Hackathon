@@ -34,11 +34,11 @@
 }
 .tabs{
     width: 75%;
-    height: 100%;
+    height: 110%;
     text-align: center;
     margin: auto;
     color: #ffffff;
-    margin-top: 4%;
+    margin-top: 2% !important;
 }
 .facts{
     width: 100%;
